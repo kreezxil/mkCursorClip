@@ -1,0 +1,33 @@
+﻿<Window x:Class="mkCursorClip.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="mkCursorClip" Height="369" Width="210" Loaded="Window_Loaded" Icon="/mkCursorClip;component/mkCursorClip.ico">
+    <Grid Width="189">
+        <GroupBox Header="spacing" Height="162" HorizontalAlignment="Left" Margin="12,12,0,0" Name="groupBox1" VerticalAlignment="Top" Width="165">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="120*" />
+                </Grid.ColumnDefinitions>
+                <TextBox Height="23" HorizontalAlignment="Left" Margin="55,8,0,0" Name="tbTop" VerticalAlignment="Top" Width="30" MaxLength="3" Grid.Column="1" />
+                <Label Content="top:" Height="28" HorizontalAlignment="Left" Margin="6,6,0,0" Name="label1" VerticalAlignment="Top" />
+                <Label Content="left:" Height="28" HorizontalAlignment="Left" Margin="6,40,0,0" Name="label2" VerticalAlignment="Top" />
+                <Label Content="bottom:" Height="28" HorizontalAlignment="Left" Margin="6,74,0,0" Name="label3" VerticalAlignment="Top" />
+                <Label Content="right:" Height="28" HorizontalAlignment="Left" Margin="6,108,0,0" Name="label4" VerticalAlignment="Top" />
+                <TextBox Height="23" HorizontalAlignment="Left" Margin="55,42,0,0" MaxLength="3" Name="tbLeft" VerticalAlignment="Top" Width="30" Grid.Column="1" />
+                <TextBox Height="23" HorizontalAlignment="Left" Margin="55,76,0,0" MaxLength="3" Name="tbBottom" VerticalAlignment="Top" Width="30" Grid.Column="1" />
+                <TextBox Height="23" HorizontalAlignment="Left" Margin="55,110,0,0" MaxLength="3" Name="tbRight" VerticalAlignment="Top" Width="30" Grid.Column="1" />
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="hotkeys" Height="100" HorizontalAlignment="Left" Margin="12,191,0,0" Name="groupBox2" VerticalAlignment="Top" Width="165">
+            <Grid>
+                <Label Content="key one:" Height="28" HorizontalAlignment="Left" Margin="6,6,0,0" Name="label5" VerticalAlignment="Top" />
+                <Label Content="key two:" Height="28" HorizontalAlignment="Left" Margin="6,40,0,0" Name="label6" VerticalAlignment="Top" />
+                <TextBox Height="23" HorizontalAlignment="Left" Margin="67,8,0,0" MaxLength="3" Name="tbKeyOne" VerticalAlignment="Top" Width="76" />
+                <TextBox Height="23" HorizontalAlignment="Left" Margin="67,42,0,0" MaxLength="3" Name="tbKeyTwo" VerticalAlignment="Top" Width="76" />
+            </Grid>
+        </GroupBox>
+        <Button Content="reset" Height="23" HorizontalAlignment="Right" Margin="0,302,12,0" Name="buttonReset" VerticalAlignment="Top" Width="80" Click="buttonReset_Click" />
+        <Button Content="save" Height="23" HorizontalAlignment="Right" Margin="0,302,97,0" Name="buttonSave" VerticalAlignment="Top" Width="80" Click="buttonSave_Click" />
+    </Grid>
+</Window>
